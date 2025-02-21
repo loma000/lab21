@@ -8,7 +8,7 @@ HWND textfield,button[4],textbox1,textbox2;
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
 	switch(Message) {
 		case WM_CREATE:
-textfield = CreateWindow("STATIC","calculator",WS_VISIBLE|WS_CHILD ,80,20,65,25,hwnd,NULL,NULL,NULL);
+textfield = CreateWindow("STATIC","Please input two number",WS_VISIBLE|WS_CHILD ,40,10,170,25,hwnd,NULL,NULL,NULL);
 
 textbox1 =  CreateWindow("EDIT","",WS_VISIBLE|WS_CHILD|WS_BORDER ,80,40,65,25,hwnd,NULL,NULL,NULL);
 textbox2 =  CreateWindow("EDIT","",WS_VISIBLE|WS_CHILD|WS_BORDER ,80,80,65,25,hwnd,NULL,NULL,NULL);
